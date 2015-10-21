@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  before_filter { :index, :show }
 
   private
     def user_params
