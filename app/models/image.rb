@@ -1,6 +1,8 @@
 class Image < ActiveRecord::Base
   has_attached_file :photo
 
+  belongs_to :user
+
   validates :photo, attachment_presence: true
   validates_with AttachmentPresenceValidator, attributes: :photo
   validates_attachment :photo,

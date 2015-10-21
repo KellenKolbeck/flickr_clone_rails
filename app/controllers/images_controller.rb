@@ -1,19 +1,17 @@
 class ImagesController < ApplicationController
 
-  def index
-    @images = Image.all
-  end
-
   def new
-    @image = Image.new
+    @user = User.find(params[:user_id])
+    @image = @user.images.new
   end
 
   def create
-    @image = Image.new(image_params)
+    @user = User.find(params[:user_id])
+    @image = @user.images.new(image_params)
     if @image.save
-      redirect_to root_path
+      redirect_to user_path(@image.user)
     else
-      render 'new'
+      render :new
     end
   end
 
