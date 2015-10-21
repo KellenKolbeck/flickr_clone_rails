@@ -1,1 +1,9 @@
-<h2>hello</h2>
+<h2>Flickr</h2>
+
+<% @images.each do |image| %>
+  <%= image_tag(image.photo) %>
+  <p><%= image.title %></p>
+<% end %>
+
+<br>
+<%= link_to "Upload new photo", new_image_path %>
