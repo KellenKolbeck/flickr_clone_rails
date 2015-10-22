@@ -1,0 +1,31 @@
+Is the Github documentation - commits and README - thorough and descriptive?
+  No ReadME file. git log is a bit lacking, though there are some good descriptive commits.
+
+
+Is there good spec coverage (unit and integration)?
+  No spec coverage at all.
+
+Do all specs pass?
+  no specs written.
+
+Is the application logic clear and easy to navigate?
+  What is written is easy to follow and fairly clear. However it is missing a lot of needed logic.
+
+Are objects created from a custom class with custom methods?
+  Yes.
+
+Does one instance of a class appear in the method of another class?
+  Yes.
+
+Does Sinatra process GET and POST request/responses successfully?
+  The login system works correctly, so these requests are done correctly, but outside of this there weren't a lot of examples of routing.
+
+Is the site user-friendly?
+  very minimal, but easy to create an account and login.
+
+
+Are there opportunities for refactoring?
+  A few spots that could use work are building out the functionality, refactoring the login system to be more than just slapped onto the index page.
+
+Do you have any additional constructive criticism or positive feedback to share?
+Talked to Kellen, they didn't get the work pushed from Day 2. This is a good start for a small amount of time though. Good use of Devise and Paperclip gems. 
